@@ -1,0 +1,55 @@
+.task-container {
+  width: 500px;
+	min-height: 65px;
+	background-color: #808080;
+	margin: 5px 0;
+	padding: 8px 15px 8px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 10px;
+	border: 2px solid gray;
+	cursor: pointer;
+}
+
+.task-text {
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	overflow-wrap: anywhere;
+/* ^-permite que si el texto es demasiado largo que este sea cortado */
+}
+
+.task-container:hover {
+	background-color: #b3b3b3;
+}
+
+.task-icon {
+	width: 25px;
+	height: 25px;
+	margin: 5px;
+}
+
+/* se ejecutada si tiene las dos clases */
+.task-container.completed {
+	background-color: #04a504;
+	text-decoration: line-through;
+}
+
+/* 
+de esta manera podemos hacer un degradado en las tareas que son agregadas en el toDoLIst
+
+.task-container:nth-child( 3n + 1 ) {
+	background-color: darkblue;
+}
+
+.task-container:nth-child( 3n + 2 ) {
+	background-color: blue;
+}
+
+.task-container:nth-child( 3n + 1 ) {
+	background-color: lightblue;
+}
+*/

@@ -1,0 +1,41 @@
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-input {
+  width: 350px;
+  font-size: 18px;
+  background-color: white;
+  padding: 18px 32px 14px 16px;
+  border: 3px solid #808080;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+}
+
+.task-input:hover {
+  background-color: #e8e5e5;
+}
+
+.task-button {
+  padding: 16px;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 4px 10px 10px 0;
+  cursor: pointer;
+  outline: none;
+  background: #fff;
+  color: #008000;
+  border: 3px solid #008000;
+  text-transform: capitalize;
+  /* esta sirve para que la primera letra sea en mayuscula */
+}
+
+.task-button:hover {
+  background-color: #008000;
+  color: #fff;
+  border: 3px solid rgb(80, 125, 89);
+}
